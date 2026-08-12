@@ -1,0 +1,87 @@
+{
+  "name": "code-formatter-helper",
+  "displayName": "Code Formatter Helper",
+  "description": "A lightweight code formatter that automatically formats your code on save with support for multiple languages.",
+  "version": "1.2.4",
+  "publisher": "devtools-community",
+  "author": {
+    "name": "DevTools Community"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/devtools-community/code-formatter-helper",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devtools-community/code-formatter-helper.git"
+  },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Formatters",
+    "Other"
+  ],
+  "keywords": [
+    "formatter",
+    "beautify",
+    "prettier",
+    "code style",
+    "auto-format"
+  ],
+  "icon": "media/icon.png",
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codeFormatter.formatDocument",
+        "title": "Format Document (Helper)",
+        "category": "Formatter Helper"
+      },
+      {
+        "command": "codeFormatter.formatSelection",
+        "title": "Format Selection (Helper)",
+        "category": "Formatter Helper"
+      },
+      {
+        "command": "codeFormatter.toggleAutoFormat",
+        "title": "Toggle Auto-Format on Save",
+        "category": "Formatter Helper"
+      }
+    ],
+    "configuration": {
+      "title": "Code Formatter Helper",
+      "properties": {
+        "codeFormatter.autoFormatOnSave": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically format documents on save."
+        },
+        "codeFormatter.indentSize": {
+          "type": "number",
+          "default": 2,
+          "description": "Number of spaces per indentation level."
+        },
+        "codeFormatter.verbose": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable verbose logging in the output channel."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "node ./build.js",
+    "package": "vsce package --no-yarn --no-dependencies",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "^18.0.0"
+  }
+}
