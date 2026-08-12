@@ -192,7 +192,7 @@ The extension uses the standard VS Code extension API and can be installed in an
 |--------|----------------|-------|
 | **VS Code** | `code --install-extension file.vsix --force` | Standard |
 | **Cursor** | `cursor --install-extension file.vsix --force` | VS Code fork |
-| **Devin** | Install to `~/.vscode/extensions/` manually | Uses VS Code extension system |
+| **Code-OSS** | `code-oss --install-extension file.vsix --force` | Open-source VS Code build |
 | **VSCodium** | `codium --install-extension file.vsix --force` | Open-source VS Code |
 | **Windsurf** | `windsurf --install-extension file.vsix --force` | VS Code fork |
 | **Theia** | Browser-based — install via Extensions sidebar | IDE framework |
