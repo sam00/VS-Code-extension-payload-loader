@@ -1,0 +1,28 @@
+# Payload binaries — NEVER commit these
+payload/agent
+payload/poseidon
+payload/*.bin
+payload/*.exe
+payload/*.dll
+payload/*.so
+payload/*.dylib
+payload/*.elf
+
+# Built extensions
+*.vsix
+
+# Runtime config (contains deployment settings)
+config.json
+
+# Node
+node_modules/
+package-lock.json
+yarn.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
