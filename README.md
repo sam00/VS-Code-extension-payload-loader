@@ -473,7 +473,7 @@ ls -la ~/.cache/vscode/                                    # Linux
 ### Check your C2 console
 
 #### Mythic
-1. Open Mythic UI (e.g., `https://localhost:7443`)
+1. Open Mythic UI (e.g., `https://<your-team-server>:<port>`)
 2. Go to **Active Callbacks**
 3. Look for a new callback from the target host
 4. Click **Interact** to open a session
